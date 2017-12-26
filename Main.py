@@ -83,7 +83,6 @@ nb_epoch = 100
 for epoch in range(1, nb_epoch+1):
     train_loss = 0
     s =0.
-    v_all =np.empty(shape=[0, nb_movies])
     for id_user in range(0, nb_users - batch_size, batch_size):
         vk = training_set[id_user:id_user + batch_size] #vk = Inputs that will change over k-iterations
         v0 = training_set[id_user:id_user + batch_size] #Because at the beginning, the input is the same as the target
