@@ -56,7 +56,7 @@ class RBM():
         self.a = torch.randn(1, nh) #Bias for hidden nodes
         self.b = torch.randn(1, nv) #Bias for visible nodes and bias for probability p_v_given_h
         
-    def sample_h(self, x): #Activates hidden nodes according to a probability P(h|); x is the visible neurons in the probability p(h|v)
+    def sample_h(self, x): #Activates hidden nodes according to a probability P(h|v); x is the visible neurons in the probability p(h|v)
         wx = torch.mm(x, self.W.t()) #Sigmoid function = wx + bias; p_h_given_v is the probability that the hidden node is activated
         activation = wx + self.a.expand_as(wx) 
         p_h_given_v = torch.sigmoid(activation)
