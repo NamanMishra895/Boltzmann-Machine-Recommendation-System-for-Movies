@@ -13,7 +13,6 @@ Learning rate : Default torch learning rate
 Evaluation : Simple Distancce
 
 
-#Notes:
 
 
 
