@@ -6,7 +6,7 @@ The Train-test Split is at 80-20 %. u1.base (80k ratings) is the training data a
 
 The Likelihood has been converted to boolean values. If the user gives a rating of 1 or 2, the boolean value is set to 0, indicating that the user did NOT like the movie. If the rating is 3 or greater, the boolean value is set to 1, indicating that the user likes the movie.
 
-The parameters for optimum results are as follows (Avoids Overfitting): 
+The parameters for optimum results are as follows 
 
 1. Number of hidden features (nh): 300
 2. Batch Size : 25
